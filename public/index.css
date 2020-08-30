@@ -2,6 +2,15 @@
  * Globals
  */
 
+@font-face {
+    font-family: glitch-doctor;
+    src: url(assets/Doctor\ Glitch.otf);
+}
+
+.mirage {
+    font-family: glitch-doctor;
+}
+
 /* Links */
 a,
 a:focus,
