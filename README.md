@@ -12,7 +12,7 @@ Mirage uses the heart rate data provided by Apple's Health app, which can by syn
 
 ## Challenges we ran into
 
-One of the largest challenges we ran into was being able to model the variance within different heart conditions amongst the general population. To do this, we had to create a normal distribution with a standard deviation coefficient described in our [research](https://iopscience.iop.org/article/10.1088/0967-3334/34/7/781/pdf). Unfortunately, iOS Shortcuts doesn't have a feature available to randomly choose a number from a normal distribution. In order to resolve this issue, we had to implement a Box-Muller Transform, which ultimately converted the uniform distribution provided by iOS Shortcuts and turned it into the normal distribution we needed.
+One of the largest challenges we ran into was being able to model the variance within different heart conditions amongst the general population. To do this, we had to create a normal distribution with a standard deviation coefficient described in our [research](https://iopscience.iop.org/article/10.1088/0967-3334/34/7/781/pdf). Unfortunately, iOS Shortcuts doesn't have a feature available to randomly choose a number from a normal distribution. In order to resolve this issue, we had to implement a [Box-Muller Transform](https://en.wikipedia.org/wiki/Box%E2%80%93Muller_transform), which ultimately converted the uniform distribution provided by iOS Shortcuts and turned it into the normal distribution we needed.
 
 ## Accomplishments that we're proud of
 
